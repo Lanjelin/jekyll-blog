@@ -1,13 +1,16 @@
 ---
 layout: post
-title: "Hello World!"
-tag: "Hello World"
+title: "Hello Jekyll!"
+tags: "Hello World"
 category: "Docker"
+excerpt_separator: <!--more-->
 ---
 
 ## Hello World
 
 We're up and running, I hope...
+
+<!--more-->
 
 This magnificent page is published using [Jekyll Docker](https://github.com/envygeeks/jekyll-docker/blob/master/README.md) with the beautiful [Chirpy Theme](https://chirpy.cotes.page/)!
 
@@ -21,13 +24,16 @@ services:
     container_name: jekyll
     volumes:
       - ~/www/jekyll/jekyll-blog:/srv/jekyll:Z
-    ports:
-      - 4000:4000
+    #ports:
+    #  - 4000:4000
     networks:
       - web
-    command: ["jekyll", "serve", "--watch", "--drafts"]
+    command: ["jekyll", "serve", "--watch"]
 
 networks:
   web:
     external: true
 ```
+
+_Running everything though nginx-proxy-manager, I usually skip the port declaration, as all my containers exposed to the internet is on the same network as nginx-proxy-manager, and it accesses them directly._
+_More on nginx-proxy-manager will hopefully come later_
