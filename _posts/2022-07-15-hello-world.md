@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Welcome to Jekyll!"
+title: "Hello World!"
 tag: "Hello World"
 category: "Docker"
 ---
 
-# Hello World
+## Hello World
 
 We're up and running, I hope...
 
@@ -28,6 +28,6 @@ services:
     command: ["jekyll", "serve", "--watch", "--drafts"]
 
 networks:
-  traefik:
+  web:
     external: true
 ```
