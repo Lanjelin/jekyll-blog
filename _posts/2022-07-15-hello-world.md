@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hello Jekyll!"
-tags: "Hello World"
+tags: ["Hello World", "Docker"]
 category: "Docker"
 excerpt_separator: <!--more-->
 ---
