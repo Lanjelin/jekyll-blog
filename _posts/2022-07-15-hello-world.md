@@ -16,7 +16,7 @@ This magnificent page is published using [Jekyll Docker](https://github.com/envy
 
 The compose-file is pretty much copy-pasta from the [Jekyll Github](https://github.com/envygeeks/jekyll-docker/blob/master/README.md)
 
-````yml
+```yml
 version: "3.9"
 services:
   jekyll:
@@ -34,9 +34,9 @@ networks:
   web:
     external: true
 ```
+
 {: file="/docker-compose.yml" }
 
 _Running everything though nginx-proxy-manager, I usually skip the port declaration, as all my containers exposed to the internet is on the same network as nginx-proxy-manager, and it accesses them directly._
 
 _More on nginx-proxy-manager will hopefully come later_
-````
