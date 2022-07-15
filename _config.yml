@@ -23,13 +23,15 @@ timezone: Europe/Oslo
 
 title: Code Ramble # the main title
 
-tagline: Just a place to dump random code and ideas. # it will display as the sub-title
+tagline: Random bits of code. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   Just a place to dump random code and ideas.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "blog.svan.es"
+
+excerpt_separator: <!--more-->
 
 github:
   username: Lanjelin # change to your github username

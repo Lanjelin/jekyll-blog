@@ -3,7 +3,6 @@ layout: post
 title: "Hello Jekyll!"
 tags: ["Hello World", "Docker"]
 category: "Docker"
-excerpt_separator: <!--more-->
 ---
 
 ## Hello World
@@ -36,4 +35,5 @@ networks:
 ```
 
 _Running everything though nginx-proxy-manager, I usually skip the port declaration, as all my containers exposed to the internet is on the same network as nginx-proxy-manager, and it accesses them directly._
+
 _More on nginx-proxy-manager will hopefully come later_
