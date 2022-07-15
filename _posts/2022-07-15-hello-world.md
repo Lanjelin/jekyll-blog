@@ -35,7 +35,7 @@ networks:
     external: true
 ```
 
-{: file="docker-compose.yml" }
+{: file="/docker-compose.yml" }
 
 _Running everything though nginx-proxy-manager, I usually skip the port declaration, as all my containers exposed to the internet is on the same network as nginx-proxy-manager, and it accesses them directly._
 
