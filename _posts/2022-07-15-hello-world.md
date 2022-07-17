@@ -25,9 +25,9 @@ As my goal is to push changes to Github before deploying, I came up with the fol
 ```yml
 version: "3.9"
 services:
-  jekyll:
+  jekyll-blog:
     image: jekyll/jekyll
-    container_name: jekyll
+    container_name: jekyll-blog
     volumes:
       - ~/www/jekyll/jekyll-blog:/srv/jekyll:Z
     environment:
@@ -55,3 +55,9 @@ location / {
   root /www/jekyll/jekyll-blog/_site;
 }
 ```
+
+### Updating the blog on-the-go
+
+I currently use [WorkingCopy](https://workingcopyapp.com/) for other projects and it got a built-in markdown editor with previews. It's excellent for pushing/pulling changes to Github, but I'm not certain it's the best markdown editor. Got some suggestions? Drop a comment.
+
+For building, it's as easy as pointing [Shelly - SSH Client](https://apps.apple.com/us/app/shelly-ssh-client/id989642999) to my server, adding a key-file, and adding `docker start jekyll-blog` to `Command`. It will then log in, start the container, then exit.
