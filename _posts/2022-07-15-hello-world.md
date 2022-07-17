@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hello Jekyll!"
-tags: ["Hello World", "Docker"]
+tags: ["Hello World", "Docker", "jekyll", "nginxproxymanager"]
 category: "Docker"
 date: 2020-07-16 01:25:00 +0200
 ---
@@ -41,7 +41,7 @@ services:
 
 ### Hosting
 
-![](/assets/images/2022-07-15-hello-world//2022-07-17-20-34-00.png){: width="972" height="589" style="max-width: 200px" .right}
+![](/assets/images/2022-07-15-hello-world//2022-07-17-20-34-00.png){: style="max-width: 250px" .right}
 As for hosting the site it self, I already have [nginx-proxy-manager](https://nginxproxymanager.com/) running, it can access my `www-folder` though bind mounts.
 
 Added a new host with my new subdomain, and set the appropriate configuration under the SSL tab.
