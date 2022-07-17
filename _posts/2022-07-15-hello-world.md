@@ -48,11 +48,10 @@ Added a new host with my new subdomain, and set the appropriate configuration un
 
 Adding the following in its `Advanced` -> `Custom Nginx Configuration` lets you serve static content.
  
+No need to spin up another container for serving a static webpage.
 
-```conf
+```
 location / {
   root /www/jekyll/jekyll-blog/_site;
 }
 ```
-
-No need to spin up another container for serving a static webpage.
