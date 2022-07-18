@@ -3,7 +3,7 @@ layout: post
 title: "Hello Jekyll!"
 tags: ["Hello World", "Docker", "jekyll", "nginxproxymanager"]
 category: "Docker"
-date: 2020-07-16 01:25:00 +0200
+date: 2022-07-16 01:25:00 +0200
 ---
 
 ## Hello World
